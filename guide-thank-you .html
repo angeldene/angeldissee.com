@@ -1,0 +1,676 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="robots" content="noindex, nofollow" />
+  <title>Your Guide Is On The Way · Angel Dissee</title>
+  <meta name="description" content="Your copy of From Stuck to Consistent is on the way. Check your inbox." />
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=DM+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet"
+  />
+
+  <style>
+    /* ============================================
+       BRAND TOKENS — Angel Dissee / FoundHer Society
+       ============================================ */
+    :root {
+      --deep-purple: #1E0F3C;
+      --deep-purple-soft: #2D1A55;
+      --gold: #E8B84B;
+      --gold-dark: #C9963A;
+      --gold-soft: #F5E5B8;
+      --cream: #FAF6EC;
+      --cream-deep: #F4EEDD;
+      --paper: #FFFFFF;
+      --ink: #2A1E48;
+      --ink-soft: #6B6478;
+      --hairline: rgba(201, 150, 58, 0.22);
+      --shadow-card: 0 30px 80px -30px rgba(30, 15, 60, 0.18),
+                     0 8px 30px -12px rgba(30, 15, 60, 0.08);
+      --radius-card: 18px;
+      --radius-btn: 4px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; }
+
+    html, body {
+      margin: 0;
+      padding: 0;
+      font-family: 'DM Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+      background: var(--cream);
+      color: var(--ink);
+      -webkit-font-smoothing: antialiased;
+      -moz-osx-font-smoothing: grayscale;
+      text-rendering: optimizeLegibility;
+    }
+
+    /* Soft radial atmosphere on the page background */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      background:
+        radial-gradient(ellipse at 20% 0%, rgba(232, 184, 75, 0.08), transparent 50%),
+        radial-gradient(ellipse at 80% 100%, rgba(30, 15, 60, 0.05), transparent 50%);
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .page {
+      position: relative;
+      z-index: 1;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px 20px 60px;
+    }
+
+    /* ============================================
+       TOP BAR — small brand mark
+       ============================================ */
+    .topbar {
+      width: 100%;
+      max-width: 720px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 36px;
+      font-size: 11px;
+      letter-spacing: 0.18em;
+      text-transform: uppercase;
+      color: var(--gold-dark);
+      font-weight: 600;
+    }
+    .topbar a {
+      color: var(--ink-soft);
+      text-decoration: none;
+      transition: color 0.2s ease;
+    }
+    .topbar a:hover { color: var(--deep-purple); }
+
+    /* ============================================
+       MAIN CARD
+       ============================================ */
+    .card {
+      width: 100%;
+      max-width: 720px;
+      background: var(--paper);
+      border: 1px solid var(--hairline);
+      border-radius: var(--radius-card);
+      padding: 64px 56px 52px;
+      box-shadow: var(--shadow-card);
+      animation: rise 0.8s cubic-bezier(0.2, 0.8, 0.2, 1) both;
+    }
+
+    @keyframes rise {
+      from { opacity: 0; transform: translateY(16px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ============================================
+       HERO SECTION
+       ============================================ */
+    .icon-wrap {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 28px;
+      animation: fade-in 0.9s 0.2s both;
+    }
+    .icon-circle {
+      width: 64px;
+      height: 64px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--cream-deep), var(--cream));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid var(--hairline);
+      box-shadow: 0 6px 20px -6px rgba(201, 150, 58, 0.25);
+    }
+    .icon-circle svg {
+      width: 28px;
+      height: 28px;
+      stroke: var(--gold-dark);
+      fill: none;
+      stroke-width: 1.5;
+    }
+
+    .hero-title {
+      font-family: 'Cormorant Garamond', Georgia, serif;
+      font-weight: 600;
+      font-size: clamp(2.2rem, 5vw, 3.2rem);
+      line-height: 1.1;
+      color: var(--deep-purple);
+      text-align: center;
+      margin: 0 0 18px;
+      letter-spacing: -0.01em;
+      animation: fade-in 0.9s 0.3s both;
+    }
+
+    .hero-sub {
+      text-align: center;
+      font-size: 1.05rem;
+      line-height: 1.6;
+      color: var(--ink-soft);
+      max-width: 520px;
+      margin: 0 auto;
+      animation: fade-in 0.9s 0.4s both;
+    }
+    .hero-sub strong {
+      color: var(--gold-dark);
+      font-weight: 600;
+    }
+
+    @keyframes fade-in {
+      from { opacity: 0; transform: translateY(8px); }
+      to   { opacity: 1; transform: translateY(0); }
+    }
+
+    /* ============================================
+       IMPORTANT BOX (spam folder warning)
+       ============================================ */
+    .alert {
+      margin: 36px 0 44px;
+      padding: 22px 28px;
+      background: linear-gradient(180deg, rgba(245, 229, 184, 0.35), rgba(245, 229, 184, 0.15));
+      border: 1px solid var(--hairline);
+      border-radius: 12px;
+      text-align: center;
+      animation: fade-in 0.9s 0.5s both;
+    }
+    .alert-label {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      letter-spacing: 0.22em;
+      text-transform: uppercase;
+      font-weight: 700;
+      color: var(--gold-dark);
+      margin-bottom: 10px;
+    }
+    .alert-label svg {
+      width: 16px;
+      height: 16px;
+      fill: var(--gold-dark);
+    }
+    .alert-body {
+      font-size: 0.95rem;
+      line-height: 1.6;
+      color: var(--ink);
+      margin: 0;
+    }
+    .alert-body .highlight {
+      color: var(--gold-dark);
+      font-weight: 700;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      font-size: 0.9em;
+    }
+
+    /* ============================================
+       WHAT HAPPENS NEXT
+       ============================================ */
+    .next-section {
+      margin: 0 0 48px;
+      animation: fade-in 0.9s 0.6s both;
+    }
+    .section-eyebrow {
+      text-align: center;
+      font-size: 11px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--gold-dark);
+      font-weight: 700;
+      margin: 0 0 28px;
+    }
+    .next-list {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+    .next-item {
+      display: grid;
+      grid-template-columns: 32px 1fr;
+      gap: 18px;
+      align-items: start;
+    }
+    .next-num {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.5rem;
+      font-weight: 600;
+      color: var(--gold-dark);
+      line-height: 1.4;
+      text-align: center;
+    }
+    .next-text {
+      font-size: 1rem;
+      line-height: 1.55;
+      color: var(--ink);
+      margin: 4px 0 0;
+    }
+
+    /* ============================================
+       DIVIDER ORNAMENT
+       ============================================ */
+    .ornament {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 14px;
+      margin: 48px 0 32px;
+    }
+    .ornament .line {
+      flex: 0 0 60px;
+      height: 1px;
+      background: var(--gold);
+      opacity: 0.5;
+    }
+    .ornament .star {
+      color: var(--gold-dark);
+      font-size: 14px;
+      letter-spacing: 0.2em;
+    }
+
+    /* ============================================
+       MEMBERSHIP OFFER (PRIMARY CTA)
+       ============================================ */
+    .offer-primary {
+      text-align: center;
+      padding: 4px 0 0;
+    }
+    .offer-eyebrow {
+      font-size: 11px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--gold-dark);
+      font-weight: 700;
+      margin: 0 0 16px;
+    }
+    .offer-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-weight: 600;
+      font-size: clamp(1.7rem, 4vw, 2.3rem);
+      line-height: 1.15;
+      color: var(--deep-purple);
+      margin: 0 0 18px;
+      letter-spacing: -0.005em;
+    }
+    .offer-desc {
+      font-size: 1rem;
+      line-height: 1.6;
+      color: var(--ink-soft);
+      max-width: 520px;
+      margin: 0 auto 26px;
+    }
+    .offer-desc em {
+      color: var(--deep-purple);
+      font-style: normal;
+      font-weight: 600;
+    }
+
+    .price-badge {
+      display: inline-flex;
+      align-items: baseline;
+      gap: 10px;
+      padding: 14px 26px;
+      background: var(--cream-deep);
+      border: 1px solid var(--gold);
+      border-radius: 999px;
+      margin-bottom: 24px;
+    }
+    .price-badge .amount {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: var(--deep-purple);
+      letter-spacing: -0.01em;
+    }
+    .price-badge .per {
+      font-size: 0.85rem;
+      color: var(--ink-soft);
+      font-weight: 500;
+    }
+    .price-badge .divider {
+      color: var(--gold-dark);
+      opacity: 0.5;
+    }
+    .price-badge .label {
+      font-size: 0.75rem;
+      letter-spacing: 0.15em;
+      text-transform: uppercase;
+      color: var(--gold-dark);
+      font-weight: 700;
+    }
+
+    .scarcity {
+      font-size: 0.88rem;
+      color: var(--ink-soft);
+      font-style: italic;
+      margin: 0 0 28px;
+    }
+    .scarcity strong {
+      color: var(--gold-dark);
+      font-style: normal;
+      font-weight: 700;
+    }
+
+    .btn-primary {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 17px 38px;
+      background: var(--deep-purple);
+      color: var(--gold);
+      font-family: 'DM Sans', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 600;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      text-decoration: none;
+      border-radius: var(--radius-btn);
+      border: 1px solid var(--deep-purple);
+      transition: all 0.25s cubic-bezier(0.2, 0.8, 0.2, 1);
+      box-shadow: 0 8px 24px -8px rgba(30, 15, 60, 0.4);
+    }
+    .btn-primary:hover {
+      background: var(--deep-purple-soft);
+      transform: translateY(-2px);
+      box-shadow: 0 14px 32px -10px rgba(30, 15, 60, 0.5);
+    }
+    .btn-primary .arrow {
+      transition: transform 0.25s ease;
+    }
+    .btn-primary:hover .arrow {
+      transform: translateX(4px);
+    }
+
+    /* ============================================
+       OR DIVIDER + SECONDARY CTA
+       ============================================ */
+    .or-divider {
+      display: flex;
+      align-items: center;
+      gap: 14px;
+      margin: 40px 0 24px;
+    }
+    .or-divider .line {
+      flex: 1;
+      height: 1px;
+      background: var(--hairline);
+    }
+    .or-divider .text {
+      font-size: 11px;
+      letter-spacing: 0.28em;
+      text-transform: uppercase;
+      color: var(--ink-soft);
+      font-weight: 600;
+    }
+
+    .offer-secondary {
+      text-align: center;
+      padding: 24px 28px;
+      background: rgba(250, 246, 236, 0.6);
+      border: 1px dashed var(--hairline);
+      border-radius: 12px;
+    }
+    .offer-secondary .secondary-title {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 1.25rem;
+      font-weight: 600;
+      color: var(--deep-purple);
+      margin: 0 0 8px;
+      line-height: 1.3;
+    }
+    .offer-secondary .secondary-desc {
+      font-size: 0.9rem;
+      line-height: 1.55;
+      color: var(--ink-soft);
+      margin: 0 0 16px;
+    }
+    .btn-secondary {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 0.85rem;
+      font-weight: 600;
+      letter-spacing: 0.06em;
+      text-transform: uppercase;
+      color: var(--deep-purple);
+      text-decoration: none;
+      padding: 10px 0;
+      border-bottom: 1.5px solid var(--gold);
+      transition: all 0.2s ease;
+    }
+    .btn-secondary:hover {
+      color: var(--gold-dark);
+      border-bottom-color: var(--gold-dark);
+    }
+    .btn-secondary .arrow {
+      transition: transform 0.2s ease;
+    }
+    .btn-secondary:hover .arrow {
+      transform: translateX(3px);
+    }
+
+    /* ============================================
+       FOOTER OF CARD
+       ============================================ */
+    .card-footer {
+      margin-top: 44px;
+      padding-top: 28px;
+      border-top: 1px solid var(--hairline);
+      text-align: center;
+    }
+    .return-link {
+      display: inline-block;
+      font-size: 0.9rem;
+      color: var(--ink-soft);
+      text-decoration: none;
+      margin-bottom: 18px;
+      transition: color 0.2s ease;
+    }
+    .return-link:hover { color: var(--deep-purple); }
+
+    .social-line {
+      font-size: 0.85rem;
+      color: var(--ink-soft);
+      margin: 0;
+    }
+    .social-line .handle {
+      color: var(--gold-dark);
+      font-weight: 700;
+      text-decoration: none;
+    }
+    .social-line .handle:hover {
+      text-decoration: underline;
+    }
+
+    /* ============================================
+       PAGE FOOTER
+       ============================================ */
+    .page-footer {
+      width: 100%;
+      max-width: 720px;
+      text-align: center;
+      margin-top: 32px;
+      font-size: 0.78rem;
+      color: var(--ink-soft);
+      opacity: 0.7;
+    }
+
+    /* ============================================
+       MOBILE
+       ============================================ */
+    @media (max-width: 640px) {
+      .page { padding: 24px 14px 40px; }
+      .topbar { margin-bottom: 24px; font-size: 10px; }
+      .card { padding: 44px 26px 36px; border-radius: 14px; }
+      .alert { padding: 18px 20px; margin: 28px 0 36px; }
+      .next-section { margin-bottom: 36px; }
+      .ornament { margin: 36px 0 24px; }
+      .ornament .line { flex: 0 0 36px; }
+      .price-badge { padding: 12px 20px; }
+      .price-badge .amount { font-size: 1.4rem; }
+      .btn-primary { padding: 15px 28px; font-size: 0.85rem; }
+      .offer-secondary { padding: 20px 18px; }
+      .or-divider { margin: 32px 0 20px; }
+    }
+  </style>
+</head>
+<body>
+  <main class="page">
+
+    <!-- Top brand bar -->
+    <div class="topbar">
+      <span>FoundHer Society</span>
+      <a href="https://angeldissee.com">← Back to site</a>
+    </div>
+
+    <article class="card">
+
+      <!-- Envelope icon -->
+      <div class="icon-wrap">
+        <div class="icon-circle">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <rect x="3" y="5" width="18" height="14" rx="1.5"/>
+            <path d="M3.5 6 L12 13 L20.5 6"/>
+          </svg>
+        </div>
+      </div>
+
+      <!-- Hero -->
+      <h1 class="hero-title">Your Guide Is On The Way</h1>
+      <p class="hero-sub">
+        Check your inbox — your copy of <strong>From Stuck to Consistent</strong>
+        is being delivered right now.
+      </p>
+
+      <!-- Important / spam alert -->
+      <aside class="alert">
+        <div class="alert-label">
+          <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path d="M12 2 L22 20 L2 20 Z M12 9 V14 M12 17 V17.5"
+                  fill="none" stroke="currentColor" stroke-width="1.6"
+                  stroke-linejoin="round" stroke-linecap="round"/>
+          </svg>
+          IMPORTANT
+        </div>
+        <p class="alert-body">
+          If you don&rsquo;t see it in a few minutes, check your
+          <span class="highlight">spam or promotions folder</span>
+          and mark it as &ldquo;Not Spam&rdquo; so you don&rsquo;t miss future messages from Angel.
+        </p>
+      </aside>
+
+      <!-- What happens next -->
+      <section class="next-section">
+        <h2 class="section-eyebrow">What Happens Next</h2>
+        <ol class="next-list">
+          <li class="next-item">
+            <span class="next-num">1</span>
+            <p class="next-text">
+              Open the guide and commit to 7 days of inner work — just 20 minutes a day.
+            </p>
+          </li>
+          <li class="next-item">
+            <span class="next-num">2</span>
+            <p class="next-text">
+              You&rsquo;ll get weekly emails from Angel with tools, insights, and support.
+            </p>
+          </li>
+          <li class="next-item">
+            <span class="next-num">3</span>
+            <p class="next-text">
+              When you&rsquo;re ready to go deeper, you&rsquo;ll have first access to everything Angel builds next.
+            </p>
+          </li>
+        </ol>
+      </section>
+
+      <!-- Decorative ornament before the offer -->
+      <div class="ornament" aria-hidden="true">
+        <span class="line"></span>
+        <span class="star">✦</span>
+        <span class="line"></span>
+      </div>
+
+      <!-- PRIMARY CTA: The Inner Work Circle -->
+      <section class="offer-primary">
+        <p class="offer-eyebrow">Ready To Stop Reading And Start Practicing?</p>
+        <h2 class="offer-title">Join The Inner Work Circle</h2>
+        <p class="offer-desc">
+          The guide gives you 7 days. <em>The Circle gives you a monthly practice</em> —
+          live coaching with Angel, a private women-only community, and weekly journal
+          prompts mapped to the Inner Self Govern&trade; Method.
+        </p>
+
+        <div class="price-badge">
+          <span class="amount">$37</span>
+          <span class="per">/month</span>
+          <span class="divider">·</span>
+          <span class="label">Founding Rate</span>
+        </div>
+
+        <p class="scarcity">
+          Locked for life. Only <strong>50 founding spots</strong>.
+        </p>
+
+        <a href="https://stan.store/angeldc/p/the-inner-work-circle"
+           class="btn-primary"
+           target="_blank"
+           rel="noopener">
+          Join The Circle
+          <span class="arrow">→</span>
+        </a>
+
+        <!-- OR divider -->
+        <div class="or-divider">
+          <span class="line"></span>
+          <span class="text">Or</span>
+          <span class="line"></span>
+        </div>
+
+        <!-- SECONDARY CTA: 30-Day Experience waitlist -->
+        <div class="offer-secondary">
+          <h3 class="secondary-title">Not ready for monthly?</h3>
+          <p class="secondary-desc">
+            Get on the waitlist for the 30-Day Inner Self Govern&trade; Experience —
+            an upcoming intensive cohort with only 20 founding spots.
+          </p>
+          <a href="https://angeldissee.com/waitlist.html" class="btn-secondary">
+            Get On The Waitlist
+            <span class="arrow">→</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- Footer of card -->
+      <div class="card-footer">
+        <a href="https://angeldissee.com" class="return-link">← Return to site</a>
+        <p class="social-line">
+          Follow along:
+          <a href="https://instagram.com/angeldissee" class="handle" target="_blank" rel="noopener">@angeldissee</a>
+          on Instagram, YouTube &amp; TikTok
+        </p>
+      </div>
+
+    </article>
+
+    <footer class="page-footer">
+      &copy; 2026 Angel Dissee · FoundHer Society · Inner Self Govern&trade;
+    </footer>
+
+  </main>
+</body>
+</html>

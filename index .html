@@ -1,0 +1,952 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>From Stuck to Consistent | Angel Dissee | Free 7-Day Guide</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=DM+Sans:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Meta Pixel Code -->
+  <script>
+    !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,document,'script','https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init','1330556428971197');
+    fbq('track','PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=1330556428971197&ev=PageView&noscript=1"/></noscript>
+
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+
+    html, body {
+      background-color: #FAF8FF;
+      color: #2d2d2d;
+      font-family: 'DM Sans', sans-serif;
+      line-height: 1.6;
+      min-height: 100vh;
+    }
+
+    /* GOLD TOP BAR */
+    .gold-bar {
+      height: 3px;
+      background: linear-gradient(90deg, #C9963A, #E8B84B, #C9963A);
+      width: 100%;
+    }
+
+    /* NAVIGATION */
+    .nav {
+      padding: 28px 60px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      background: #FAF8FF;
+      border-bottom: 1px solid rgba(201, 150, 58, 0.1);
+    }
+
+    .nav-brand {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: #1E0F3C;
+      text-decoration: none;
+      letter-spacing: 1px;
+    }
+
+    .nav-brand em {
+      color: #E8B84B;
+      font-style: italic;
+    }
+
+    .nav-back {
+      font-size: 13px;
+      color: #C9963A;
+      text-decoration: none;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      font-weight: 600;
+    }
+
+    /* HERO SECTION */
+    .hero {
+      background: #FAF8FF;
+      padding: 80px 60px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      align-items: center;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .hero-content {
+      padding-right: 40px;
+    }
+
+    .eyebrow {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #E8B84B;
+      margin-bottom: 24px;
+    }
+
+    .hero h1 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 56px;
+      font-weight: 700;
+      line-height: 1.15;
+      color: #1E0F3C;
+      margin-bottom: 28px;
+    }
+
+    .hero h1 em {
+      color: #E8B84B;
+      font-style: italic;
+      font-weight: 700;
+    }
+
+    .hero-subtitle {
+      font-size: 18px;
+      line-height: 1.8;
+      color: #555;
+      margin-bottom: 40px;
+      font-weight: 300;
+    }
+
+    .hero-subtitle strong {
+      color: #1E0F3C;
+      font-weight: 600;
+    }
+
+    /* FORM STYLING */
+    .form-section {
+      margin-top: 48px;
+    }
+
+    .form-label {
+      font-size: 14px;
+      font-weight: 600;
+      color: #1E0F3C;
+      margin-bottom: 16px;
+      display: block;
+    }
+
+    .form-input {
+      width: 100%;
+      padding: 16px 20px;
+      border: 2px solid #E8B84B;
+      border-radius: 4px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      color: #1E0F3C;
+      margin-bottom: 16px;
+      transition: all 0.3s ease;
+    }
+
+    .form-input:focus {
+      outline: none;
+      border-color: #C9963A;
+      background: #fff9f0;
+    }
+
+    .form-button {
+      width: 100%;
+      padding: 16px 32px;
+      background: linear-gradient(135deg, #1E0F3C, #5B3F8C);
+      color: #E8B84B;
+      border: none;
+      border-radius: 4px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      cursor: pointer;
+      transition: all 0.3s ease;
+      text-transform: uppercase;
+    }
+
+    .form-button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(30, 15, 60, 0.3);
+    }
+
+    .form-trust {
+      font-size: 12px;
+      color: #888;
+      margin-top: 16px;
+      text-align: center;
+    }
+
+    /* HERO RIGHT SIDE - ACCENT */
+    .hero-accent {
+      position: relative;
+      height: 500px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .accent-box {
+      width: 100%;
+      height: 400px;
+      background: linear-gradient(135deg, rgba(30, 15, 60, 0.05), rgba(201, 150, 58, 0.08));
+      border: 2px solid #E8B84B;
+      border-radius: 2px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .accent-box::before {
+      content: '';
+      position: absolute;
+      top: -50%;
+      right: -50%;
+      width: 300px;
+      height: 300px;
+      background: radial-gradient(circle, rgba(201, 150, 58, 0.15), transparent);
+      border-radius: 50%;
+    }
+
+    .accent-text {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      text-align: center;
+      z-index: 2;
+    }
+
+    .accent-stat {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 48px;
+      font-weight: 700;
+      color: #1E0F3C;
+      line-height: 1.2;
+    }
+
+    .accent-label {
+      font-size: 14px;
+      color: #C9963A;
+      margin-top: 12px;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      font-weight: 600;
+    }
+
+    /* PROBLEM SECTION */
+    .problem-section {
+      background: #1E0F3C;
+      padding: 80px 60px;
+      margin-top: 0;
+    }
+
+    .section-eyebrow {
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 2.5px;
+      text-transform: uppercase;
+      color: #E8B84B;
+      margin-bottom: 20px;
+    }
+
+    .problem-section h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 48px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+
+    .problem-section .subtitle {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.7);
+      margin-bottom: 60px;
+      max-width: 500px;
+      line-height: 1.7;
+    }
+
+    .problem-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+
+    .problem-item {
+      text-align: left;
+    }
+
+    .problem-icon {
+      font-size: 28px;
+      margin-bottom: 20px;
+    }
+
+    .problem-item h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 24px;
+      font-weight: 700;
+      color: #E8B84B;
+      margin-bottom: 12px;
+    }
+
+    .problem-item p {
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.8);
+      line-height: 1.7;
+    }
+
+    /* YOUR STORY SECTION */
+    .story-section {
+      background: #FAF8FF;
+      padding: 80px 60px;
+    }
+
+    .story-content {
+      max-width: 900px;
+      margin: 0 auto;
+      position: relative;
+    }
+
+    .story-stat {
+      display: inline-block;
+      margin-bottom: 40px;
+    }
+
+    .story-stat .big-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 72px;
+      font-weight: 700;
+      color: #1E0F3C;
+      line-height: 1;
+    }
+
+    .story-stat .stat-label {
+      font-size: 18px;
+      color: #C9963A;
+      margin-top: 8px;
+      font-weight: 600;
+    }
+
+    .story-section h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 42px;
+      font-weight: 700;
+      color: #1E0F3C;
+      margin-bottom: 32px;
+    }
+
+    .story-text {
+      font-size: 16px;
+      line-height: 1.9;
+      color: #555;
+      margin-bottom: 28px;
+    }
+
+    .story-text em {
+      color: #1E0F3C;
+      font-style: italic;
+      font-weight: 600;
+    }
+
+    /* BEFORE/AFTER SECTION */
+    .before-after {
+      background: #1E0F3C;
+      padding: 80px 60px;
+    }
+
+    .before-after h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 48px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 60px;
+      text-align: center;
+    }
+
+    .ba-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 60px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .ba-column {
+      padding: 40px;
+      border-radius: 2px;
+    }
+
+    .ba-before {
+      background: rgba(201, 150, 58, 0.1);
+      border: 2px solid #C9963A;
+    }
+
+    .ba-after {
+      background: rgba(201, 150, 58, 0.15);
+      border: 2px solid #E8B84B;
+    }
+
+    .ba-column h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: #E8B84B;
+      margin-bottom: 28px;
+    }
+
+    .ba-column ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    .ba-column li {
+      font-size: 15px;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 16px;
+      padding-left: 28px;
+      position: relative;
+      line-height: 1.6;
+    }
+
+    .ba-column li::before {
+      content: '→';
+      position: absolute;
+      left: 0;
+      color: #E8B84B;
+      font-weight: 700;
+    }
+
+    /* FRAMEWORK SECTION */
+    .framework {
+      background: #FAF8FF;
+      padding: 80px 60px;
+    }
+
+    .framework h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 48px;
+      font-weight: 700;
+      color: #1E0F3C;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .pillar-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 40px;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
+
+    .pillar {
+      padding: 40px;
+      background: linear-gradient(135deg, rgba(30, 15, 60, 0.05), rgba(201, 150, 58, 0.08));
+      border-left: 4px solid #E8B84B;
+      border-radius: 2px;
+    }
+
+    .pillar-number {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 48px;
+      font-weight: 700;
+      color: #E8B84B;
+      margin-bottom: 12px;
+    }
+
+    .pillar-label {
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      color: #C9963A;
+      margin-bottom: 16px;
+    }
+
+    .pillar h3 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 28px;
+      font-weight: 700;
+      color: #1E0F3C;
+      margin-bottom: 20px;
+    }
+
+    .pillar p {
+      font-size: 15px;
+      line-height: 1.8;
+      color: #555;
+    }
+
+    /* SOCIAL PROOF */
+    .social-proof {
+      background: #1E0F3C;
+      padding: 80px 60px;
+    }
+
+    .social-proof h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 48px;
+      font-weight: 700;
+      color: #fff;
+      text-align: center;
+      margin-bottom: 60px;
+    }
+
+    .testimonial-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 40px;
+      max-width: 1000px;
+      margin: 0 auto;
+    }
+
+    .testimonial {
+      padding: 40px;
+      background: rgba(201, 150, 58, 0.1);
+      border: 1px solid #E8B84B;
+      border-radius: 2px;
+    }
+
+    .testimonial-text {
+      font-size: 16px;
+      font-style: italic;
+      color: rgba(255, 255, 255, 0.9);
+      margin-bottom: 24px;
+      line-height: 1.8;
+    }
+
+    .testimonial-author {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 16px;
+      font-weight: 700;
+      color: #E8B84B;
+    }
+
+    /* FINAL CTA */
+    .final-cta {
+      background: linear-gradient(135deg, #1E0F3C, #5B3F8C);
+      padding: 80px 60px;
+      text-align: center;
+    }
+
+    .final-cta h2 {
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 48px;
+      font-weight: 700;
+      color: #fff;
+      margin-bottom: 16px;
+    }
+
+    .final-cta .subtitle {
+      font-size: 18px;
+      color: rgba(255, 255, 255, 0.8);
+      margin-bottom: 48px;
+      max-width: 600px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+    .final-form {
+      max-width: 500px;
+      margin: 0 auto;
+    }
+
+    .final-form input {
+      width: 100%;
+      padding: 16px 20px;
+      border: 2px solid #E8B84B;
+      border-radius: 4px;
+      font-family: 'DM Sans', sans-serif;
+      font-size: 16px;
+      color: #1E0F3C;
+      margin-bottom: 16px;
+    }
+
+    .final-form input:focus {
+      outline: none;
+      background: #fff9f0;
+    }
+
+    .final-form button {
+      width: 100%;
+      padding: 16px 32px;
+      background: linear-gradient(135deg, #E8B84B, #C9963A);
+      color: #1E0F3C;
+      border: none;
+      border-radius: 4px;
+      font-family: 'Cormorant Garamond', serif;
+      font-size: 18px;
+      font-weight: 700;
+      letter-spacing: 1px;
+      cursor: pointer;
+      text-transform: uppercase;
+      transition: all 0.3s ease;
+    }
+
+    .final-form button:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 8px 24px rgba(201, 150, 58, 0.4);
+    }
+
+    .final-trust {
+      font-size: 12px;
+      color: rgba(255, 255, 255, 0.7);
+      margin-top: 20px;
+    }
+
+    /* FOOTER */
+    .footer {
+      background: #2d2d2d;
+      padding: 40px 60px;
+      text-align: center;
+      font-size: 13px;
+      color: rgba(255, 255, 255, 0.6);
+    }
+
+    .footer a {
+      color: #E8B84B;
+      text-decoration: none;
+      margin: 0 12px;
+    }
+
+    /* RESPONSIVE */
+    @media (max-width: 768px) {
+      .hero {
+        grid-template-columns: 1fr;
+        padding: 60px 30px;
+        gap: 40px;
+      }
+
+      .hero-content {
+        padding-right: 0;
+      }
+
+      .hero h1 {
+        font-size: 40px;
+      }
+
+      .nav {
+        padding: 20px 30px;
+      }
+
+      .problem-grid,
+      .pillar-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .ba-container {
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .testimonial-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .problem-section,
+      .story-section,
+      .before-after,
+      .framework,
+      .social-proof,
+      .final-cta {
+        padding: 60px 30px;
+      }
+
+      .problem-section h2,
+      .framework h2,
+      .social-proof h2,
+      .final-cta h2 {
+        font-size: 36px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <!-- GOLD BAR -->
+  <div class="gold-bar"></div>
+
+  <!-- NAVIGATION -->
+  <nav class="nav">
+    <a href="/" class="nav-brand">Angel <em>Dissee</em></a>
+    <a href="/" class="nav-back">← Back to Site</a>
+  </nav>
+
+  <!-- HERO SECTION -->
+  <section class="hero">
+    <div class="hero-content">
+      <div class="eyebrow">For Women Entrepreneurs</div>
+      
+      <h1>You Know <em>Exactly</em> What To Do.<br>So Why Aren't You Doing It?</h1>
+      
+      <p class="hero-subtitle">
+        You've read the books. Taken the courses. You <strong>know</strong> the strategy.
+        <br><br>
+        But something inside you stops you right before the breakthrough.
+        <br><br>
+        That's not a strategy problem. It's an <strong>inner</strong> problem.
+        <br><br>
+        And it has a solution.
+      </p>
+
+      <div class="form-section">
+        <label class="form-label">The 7-Day Inner Work Guide reveals what's actually stopping you. And how women who hit $10K+ months broke through.</label>
+        
+        <form action="https://assets.mailerlite.com/jsonp/2023951/forms/175967845794972990/subscribe" method="post" target="ml-hidden-iframe">
+          <input 
+            type="email" 
+            name="fields[email]" 
+            class="form-input" 
+            placeholder="Your email" 
+            required 
+            aria-label="Email address"
+          />
+          
+          <button type="submit" class="form-button">GET MY GUIDE</button>
+          
+          <p class="form-trust">Free. Instant download. Privacy protected.</p>
+
+          <input type="hidden" name="ml-submit" value="1">
+          <input type="hidden" name="anticsrf" value="true">
+        </form>
+      </div>
+    </div>
+
+    <div class="hero-accent">
+      <div class="accent-box">
+        <div class="accent-text">
+          <div class="accent-stat">$10K</div>
+          <div class="accent-label">In 90 Days</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROBLEM SECTION -->
+  <section class="problem-section">
+    <div style="max-width: 1400px; margin: 0 auto;">
+      <div class="section-eyebrow">The Problem</div>
+      <h2>You're Not Broken.<br>The System Is.</h2>
+      <p class="subtitle">Most coaching teaches you MORE strategy. But you don't have a knowledge gap. You have an execution gap.</p>
+
+      <div class="problem-grid">
+        <div class="problem-item">
+          <div class="problem-icon">📖</div>
+          <h3>You Know What To Do</h3>
+          <p>You have the strategy. The roadmaps. The plans. You know EXACTLY what you need to do.</p>
+        </div>
+
+        <div class="problem-item">
+          <div class="problem-icon">⏸️</div>
+          <h3>But You Stop Right Before It Works</h3>
+          <p>Every time you get close to the breakthrough, something inside pulls the plug. Not logic. Something deeper.</p>
+        </div>
+
+        <div class="problem-item">
+          <div class="problem-icon">💔</div>
+          <h3>Then You Feel Broken</h3>
+          <p>And the cycle repeats. New course. New strategy. Same result. You wonder if something is fundamentally wrong with you. (It's not.)</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- YOUR STORY SECTION -->
+  <section class="story-section">
+    <div class="story-content">
+      <div class="story-stat">
+        <div class="story-stat">
+          <div class="big-number">$10K Month</div>
+          <div class="stat-label">In 90 Days</div>
+        </div>
+      </div>
+
+      <h2>Not Through A New Strategy.<br>Through A Shift Inside.</h2>
+
+      <p class="story-text">
+        I started more businesses than I can count. I had the ideas, drive, and vision—but kept stopping right before the breakthrough.
+      </p>
+
+      <p class="story-text">
+        For years, I thought the problem was external. I needed a better plan. A clearer roadmap. More strategy.
+      </p>
+
+      <p class="story-text">
+        <em>But none of that worked.</em>
+      </p>
+
+      <p class="story-text">
+        Then I realized: The problem wasn't out there. It was <em>in here.</em>
+      </p>
+
+      <p class="story-text">
+        I committed to 90 days of genuine inner work—getting quiet, hearing my own voice, and moving anyway. That's when everything shifted.
+      </p>
+
+      <p class="story-text">
+        <strong>Now I teach this method to other women entrepreneurs who are done waiting.</strong>
+      </p>
+    </div>
+  </section>
+
+  <!-- BEFORE/AFTER SECTION -->
+  <section class="before-after">
+    <h2>What Changes</h2>
+
+    <div class="ba-container">
+      <div class="ba-column ba-before">
+        <h3>Before: The Pattern</h3>
+        <ul>
+          <li>I'd start projects with fire, then stop with doubt</li>
+          <li>I spent $2K+ on courses that sounded good but didn't stick</li>
+          <li>I knew exactly what I needed to do... but I didn't do it</li>
+          <li>I felt broken, like something was fundamentally wrong with me</li>
+          <li>I'd ask for more strategy when I really needed more trust</li>
+        </ul>
+      </div>
+
+      <div class="ba-column ba-after">
+        <h3>After: The Freedom</h3>
+        <ul>
+          <li>I can hear my own voice even when there's noise around me</li>
+          <li>I stop waiting for perfect conditions that will never come</li>
+          <li>I move forward even when I'm only 60% sure</li>
+          <li>I trust myself to figure it out as I go</li>
+          <li>I hit my first $10K month—and it keeps growing</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- FRAMEWORK SECTION -->
+  <section class="framework">
+    <h2>Inner Self Govern™</h2>
+
+    <div class="pillar-grid">
+      <div class="pillar">
+        <div class="pillar-number">01</div>
+        <div class="pillar-label">Days 1-2</div>
+        <h3>The Signal</h3>
+        <p>Get quiet. Clear away the noise everyone else planted in your head. Hear what YOU already know you need to do.</p>
+      </div>
+
+      <div class="pillar">
+        <div class="pillar-number">02</div>
+        <div class="pillar-label">Days 3-5</div>
+        <h3>The Voice</h3>
+        <p>Trust what you hear. Not when conditions are perfect. When things are messy. This is where real confidence is built.</p>
+      </div>
+
+      <div class="pillar">
+        <div class="pillar-number">03</div>
+        <div class="pillar-label">Days 6-7</div>
+        <h3>The Command</h3>
+        <p>Move. Take the action your inner voice has been telling you to take. Not perfectly. Just forward.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- SOCIAL PROOF SECTION -->
+  <section class="social-proof">
+    <h2>Real Women. Real Shifts.</h2>
+
+    <div class="testimonial-grid">
+      <div class="testimonial">
+        <p class="testimonial-text">
+          "On Day 3, I realized I'd been making my business decisions based on what my mom said I should do. By Day 7, I'd already made a decision that changed everything. This isn't another course—it's a mirror."
+        </p>
+        <p class="testimonial-author">— Sarah M. | Coach</p>
+      </div>
+
+      <div class="testimonial">
+        <p class="testimonial-text">
+          "I've done 5+ courses. This was the only one where I actually moved. I thought I needed more strategy. Turns out I just needed to trust myself."
+        </p>
+        <p class="testimonial-author">— Jessica K. | Photographer</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- FINAL CTA SECTION -->
+  <section class="final-cta">
+    <h2>Stop Waiting For The Perfect Time.<br>This Is It.</h2>
+    
+    <p class="subtitle">The guide takes 20 minutes. The transformation takes 7 days. Your freedom starts today.</p>
+
+    <div class="final-form">
+      <form action="https://assets.mailerlite.com/jsonp/2023951/forms/175967845794972990/subscribe" method="post" target="ml-hidden-iframe">
+        <input 
+          type="email" 
+          name="fields[email]" 
+          placeholder="Your email" 
+          required 
+          aria-label="Email address"
+        />
+        
+        <button type="submit">SEND ME THE GUIDE</button>
+
+        <p class="final-trust">Instant download. Your privacy is protected. Cancel anytime.</p>
+
+        <input type="hidden" name="ml-submit" value="1">
+        <input type="hidden" name="anticsrf" value="true">
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <p>
+      <a href="https://instagram.com/angeldissee" target="_blank">Instagram</a>
+      <a href="https://youtube.com/@angeldissee" target="_blank">YouTube</a>
+      <a href="https://tiktok.com/@angeldissee" target="_blank">TikTok</a>
+    </p>
+    <p style="margin-top: 20px;">&copy; 2026 Angel Dissee | FoundHer Society. All rights reserved.</p>
+  </footer>
+
+  <!-- Hidden iframe receives the MailerLite form response so the page doesn't navigate away -->
+  <iframe name="ml-hidden-iframe" id="ml-hidden-iframe" style="display:none;width:0;height:0;border:0;" tabindex="-1" aria-hidden="true"></iframe>
+
+  <script src="https://groot.mailerlite.com/js/w/webforms.min.js?vb397d78ebaa8a0f631d35384c46d781b" type="text/javascript"></script>
+
+  <script>
+    // After form submits to the hidden iframe, redirect the main page to the thank-you page.
+    (function () {
+      var THANK_YOU_URL = 'https://angeldissee.com/guide-thank-you.html';
+      var iframe = document.getElementById('ml-hidden-iframe');
+      var formSubmitted = false;
+      var redirectTimer = null;
+
+      // Disable button + show loading state when a form is submitted
+      document.querySelectorAll('form[action*="mailerlite"]').forEach(function (form) {
+        form.addEventListener('submit', function () {
+          formSubmitted = true;
+          var btn = form.querySelector('button[type="submit"]');
+          if (btn) {
+            btn.dataset.originalText = btn.textContent;
+            btn.textContent = 'Sending...';
+            btn.disabled = true;
+            btn.style.opacity = '0.7';
+            btn.style.cursor = 'wait';
+          }
+          // Safety net: redirect after 2.5s even if iframe load event doesn't fire
+          redirectTimer = setTimeout(function () {
+            window.location.href = THANK_YOU_URL;
+          }, 2500);
+        });
+      });
+
+      // When MailerLite responds inside the hidden iframe, redirect the main page
+      if (iframe) {
+        iframe.addEventListener('load', function () {
+          if (formSubmitted) {
+            if (redirectTimer) clearTimeout(redirectTimer);
+            window.location.href = THANK_YOU_URL;
+          }
+        });
+      }
+    })();
+  </script>
+</body>
+
+</html>

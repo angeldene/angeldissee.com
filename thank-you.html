@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>You're On The Waitlist! | Inner Self Govern 30-Day Experience | Angel Dissee</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,600;0,700;1,400;1,600&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet">
+
+<!-- Meta Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s)
+{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];
+s.parentNode.insertBefore(t,s)}(window, document,'script',
+'https://connect.facebook.net/en_US/fbevents.js');
+fbq('init', '1330556428971197');
+fbq('track', 'PageView');
+fbq('track', 'Lead');
+</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1330556428971197&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Meta Pixel Code -->
+
+<style>
+* { margin:0; padding:0; box-sizing:border-box; }
+
+html, body {
+  background-color: #1E0F3C !important;
+  background: #1E0F3C !important;
+  color: #ffffff;
+  font-family: 'DM Sans', sans-serif;
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px 20px;
+}
+
+/* GOLD TOP BAR */
+.gold-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: linear-gradient(90deg, #C9963A, #E8B84B, #C9963A);
+  z-index: 100;
+}
+
+/* CONTAINER */
+.container {
+  max-width: 600px;
+  width: 100%;
+  text-align: center;
+  background: rgba(237,231,246,0.03);
+  border: 1px solid rgba(201,150,58,0.2);
+  border-radius: 12px;
+  padding: 60px 40px;
+  position: relative;
+  overflow: hidden;
+}
+
+.container::before {
+  content: '';
+  position: absolute;
+  top: -100px;
+  right: -100px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(201,150,58,0.15) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+.container::after {
+  content: '';
+  position: absolute;
+  bottom: -100px;
+  left: -100px;
+  width: 300px;
+  height: 300px;
+  background: radial-gradient(circle, rgba(91,63,140,0.2) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* CHECKMARK */
+.checkmark {
+  width: 80px;
+  height: 80px;
+  margin: 0 auto 24px;
+  background: linear-gradient(135deg, #C9963A, #E8B84B);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 48px;
+  animation: popIn 0.6s ease-out;
+}
+
+@keyframes popIn {
+  0% {
+    transform: scale(0);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+/* HEADLINE */
+h1 {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 48px;
+  font-weight: 700;
+  line-height: 1.2;
+  margin-bottom: 16px;
+  background: linear-gradient(135deg, #ffffff 0%, rgba(232,184,75,0.9) 100%);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+/* SUBHEADLINE */
+.subhead {
+  font-size: 18px;
+  line-height: 1.6;
+  color: rgba(237,231,246,0.85);
+  margin-bottom: 32px;
+}
+
+/* NEXT STEPS */
+.next-steps {
+  background: rgba(201,150,58,0.08);
+  border: 1px solid rgba(201,150,58,0.25);
+  border-radius: 8px;
+  padding: 24px;
+  margin: 32px 0;
+  text-align: left;
+}
+
+.next-steps h2 {
+  font-size: 16px;
+  font-weight: 700;
+  color: #E8B84B;
+  margin-bottom: 16px;
+  text-align: center;
+}
+
+.step {
+  display: flex;
+  gap: 16px;
+  margin-bottom: 16px;
+  font-size: 15px;
+  line-height: 1.5;
+  color: rgba(237,231,246,0.9);
+}
+
+.step:last-child {
+  margin-bottom: 0;
+}
+
+.step-number {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  background: linear-gradient(135deg, #C9963A, #E8B84B);
+  color: #1E0F3C;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+/* CTA BUTTON */
+.cta-button {
+  display: inline-block;
+  padding: 14px 32px;
+  background: linear-gradient(135deg, #C9963A, #E8B84B);
+  color: #1E0F3C;
+  font-weight: 700;
+  font-size: 15px;
+  text-decoration: none;
+  border-radius: 6px;
+  transition: all 0.3s;
+  margin-top: 24px;
+  border: none;
+  cursor: pointer;
+}
+
+.cta-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(201,150,58,0.3);
+}
+
+/* QUOTE */
+.quote {
+  background: rgba(201,150,58,0.08);
+  border-left: 3px solid #E8B84B;
+  padding: 24px;
+  margin: 32px 0;
+  border-radius: 4px;
+}
+
+.quote p {
+  font-size: 15px;
+  line-height: 1.7;
+  color: rgba(237,231,246,0.9);
+  font-style: italic;
+  margin-bottom: 12px;
+}
+
+.quote-attr {
+  font-weight: 700;
+  color: #E8B84B;
+  font-style: normal;
+  font-size: 14px;
+}
+
+/* SOCIAL */
+.social {
+  margin-top: 40px;
+  padding-top: 24px;
+  border-top: 1px solid rgba(201,150,58,0.15);
+  font-size: 14px;
+  color: rgba(237,231,246,0.65);
+}
+
+.social a {
+  color: #E8B84B;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+.social a:hover {
+  text-decoration: underline;
+}
+
+/* RESPONSIVE */
+@media (max-width: 600px) {
+  .container {
+    padding: 40px 24px;
+  }
+  
+  h1 {
+    font-size: 32px;
+  }
+  
+  .subhead {
+    font-size: 16px;
+  }
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="gold-bar"></div>
+
+<div class="container">
+  
+  <div class="checkmark">✓</div>
+  
+  <h1>You're In!</h1>
+  
+  <p class="subhead">
+    Your spot on the waitlist is confirmed. You're officially first in line to join the Inner Self Govern™ 30-Day Experience when enrollment opens.
+  </p>
+
+  <div class="next-steps">
+    <h2>What Happens Next</h2>
+    <div class="step">
+      <div class="step-number">1</div>
+      <div>Check your email for a confirmation (and be sure to check spam if it doesn't show up)</div>
+    </div>
+    <div class="step">
+      <div class="step-number">2</div>
+      <div>You'll get a personal message from Angel when your cohort is ready to launch</div>
+    </div>
+    <div class="step">
+      <div class="step-number">3</div>
+      <div>Lock in founding member pricing — the lowest price this program will ever be</div>
+    </div>
+  </div>
+
+  <div class="quote">
+    <p>"You are the method. Not perfectly. Just forward."</p>
+    <p class="quote-attr">— Angel Dissee</p>
+  </div>
+
+  <p style="font-size: 15px; color: rgba(237,231,246,0.8); margin: 24px 0;">
+    In the meantime, dive deeper into the Inner Self Govern framework with our free 7-day guide.
+  </p>
+
+  <a href="https://angeldissee.com" class="cta-button">Return to Site</a>
+
+  <div class="social">
+    Follow along: <a href="https://instagram.com/angeldissee">@angeldissee</a> on Instagram, YouTube & TikTok
+  </div>
+
+</div>
+
+</body>
+</html>
